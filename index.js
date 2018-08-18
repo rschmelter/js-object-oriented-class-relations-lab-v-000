@@ -39,7 +39,7 @@ class Trip {
       return store.passengers.find(function(passengers){
         return passenger.id === this.passengerId
       })
-    }
+    
 
   }
 }
