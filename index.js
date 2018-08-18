@@ -26,6 +26,12 @@ class Trip {
     this.passenger = passenger
     this.id = ++tripId
 
+    passenger() {
+      return store.passengers.find(function(passenger) {
+        return passenger.id === this.passengerId
+      })
+    }
+
     if(driver){
       this.driverId = driver.id
     }
@@ -34,8 +40,5 @@ class Trip {
       this.passengerId = passenger.id
     }
     store.trips.push(this)
-
-
-
   }
 }
