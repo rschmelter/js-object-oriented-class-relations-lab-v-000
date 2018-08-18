@@ -29,7 +29,7 @@ class Trip {
 
     store.trips.push(this)
 
-    passenger(){
+    passenger()
 
 
 
