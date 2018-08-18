@@ -37,6 +37,10 @@ class Trip {
 
 
     store.trips.push(this)
-
+    passenger(){
+      return store.passengers.find(function(passengers){
+        return passenger.id === this.passengerId
+      })
+    }
   }
 }
